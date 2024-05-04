@@ -1,4 +1,4 @@
-const API = "https://api.realworld.io/api";
+const API = localStorage.getItem('api') ? localStorage.getItem('api') : "https://api.realworld.io/api";
 
 export function articlesFeed({offset, limit = 10}) {
   return fetch(`${API}/articles/feed?${offset ? `&offset=${offset}` : ''}${limit ? `&limit=${limit}` : ''}`, {
