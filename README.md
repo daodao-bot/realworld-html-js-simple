@@ -1,1 +1,1 @@
-# realworld-js-simple
+# realworld-html-js-simple
