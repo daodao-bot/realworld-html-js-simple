@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <!--#include virtual="/include/head.html" -->
+  <title>Home - Conduit</title>
+
+</head>
+<body>
+
+<!--#include virtual="/include/navbar.html" -->
+
+<div class="home-page">
+  <div class="banner">
+    <div class="container">
+      <h1 class="logo-font">conduit</h1>
+      <p>A place to share your knowledge.</p>
+    </div>
+  </div>
+
+  <div class="container page">
+    <div class="row">
+      <div class="col-md-9">
+        <div class="feed-toggle">
+          <ul class="nav nav-pills outline-active">
+            <li class="nav-item">
+              <a id="nav-link-your" class="nav-link" href="">Your Feed</a>
+            </li>
+            <li class="nav-item">
+              <a id="nav-link-global" class="nav-link active" href="">Global Feed</a>
+            </li>
+            <li class="nav-item">
+              <a id="nav-link-tag" class="nav-link" href=""></a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="articles-list"></div>
+
+        <ul class="pagination"></ul>
+      </div>
+
+      <div class="col-md-3">
+        <div class="sidebar">
+          <p>Popular Tags</p>
+
+          <div class="tag-list"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--#include virtual="/include/footer.html" -->
+
+<script src="/js/index.js" type="module"></script>
+</body>
+</html>

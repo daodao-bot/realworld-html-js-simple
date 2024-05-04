@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <!--#include virtual="/include/head.html" -->
+  <title>Home - Conduit</title>
+</head>
+<body>
+
+<!--#include virtual="/include/navbar.html" -->
+
+<div class="settings-page">
+  <div class="container page">
+    <div class="row">
+      <div class="col-md-6 offset-md-3 col-xs-12">
+        <h1 class="text-xs-center">Your Settings</h1>
+
+        <ul class="error-messages">
+          <li>That name is required</li>
+        </ul>
+
+        <form>
+          <fieldset>
+            <fieldset class="form-group">
+              <input class="form-control" type="url" placeholder="URL of profile picture" />
+            </fieldset>
+            <fieldset class="form-group">
+              <input class="form-control form-control-lg" type="text" placeholder="Your Name" />
+            </fieldset>
+            <fieldset class="form-group">
+              <textarea
+                  class="form-control form-control-lg"
+                  rows="8"
+                  placeholder="Short bio about you"
+              ></textarea>
+            </fieldset>
+            <fieldset class="form-group">
+              <input class="form-control form-control-lg" type="email" placeholder="Email" />
+            </fieldset>
+            <fieldset class="form-group">
+              <input
+                  class="form-control form-control-lg"
+                  type="password"
+                  placeholder="New Password"
+              />
+            </fieldset>
+            <button class="btn btn-lg btn-primary pull-xs-right" type="submit">Update Settings</button>
+          </fieldset>
+        </form>
+        <hr />
+        <button id="button-logout" class="btn btn-outline-danger">Or click here to logout.</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--#include virtual="/include/footer.html" -->
+
+<script src="/js/settings.js" type="module"></script>
+</body>
+</html>

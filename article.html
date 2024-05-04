@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <!--#include virtual="/include/head.html" -->
+  <title>Home - Conduit</title>
+</head>
+<body>
+
+<!--#include virtual="/include/navbar.html" -->
+
+<div class="article-page">
+  <div class="banner">
+    <div class="container">
+      <h1></h1>
+
+      <div class="article-meta">
+        <a class="author-profile" href="/profile/?"><img class="author-image" src="?"  alt=""/></a>
+        <div class="info">
+          <a href="/profile/?" class="author-profile author">?</a>
+          <span class="date">?</span>
+        </div>
+        <button id="follow-button" class="btn btn-sm btn-outline-secondary">
+          <i class="ion-plus-round"></i>
+          &nbsp; Follow <span class="author-username">?</span> <span id="follow-count" class="counter"></span>
+        </button>
+        &nbsp;&nbsp;
+        <button id="favorite-button" class="btn btn-sm btn-outline-primary">
+          <i class="ion-heart"></i>
+          &nbsp; Favorite Post <span id="favorite-count" class="counter">(?)</span>
+        </button>
+        <button id="edit-button" class="btn btn-sm btn-outline-secondary">
+          <i class="ion-edit"></i> Edit Article
+        </button>
+        <button id="delete-button" class="btn btn-sm btn-outline-danger">
+          <i class="ion-trash-a"></i> Delete Article
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container page">
+    <div class="row article-content">
+      <div class="col-md-12">
+        <p id="p-description"></p>
+        <h2 id="introducing-ionic"></h2>
+        <p id="p-body"></p>
+        <ul class="tag-list"></ul>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="row">
+      <div class="col-xs-12 col-md-8 offset-md-2">
+
+        <p id="comment-alert" hidden><a href="/login">Sign in</a>&nbsp; or &nbsp;<a href="/register">Sign up</a>&nbsp; to add comments on this article.</p>
+
+        <form id="comment-form" class="card comment-form" hidden>
+          <div class="card-block">
+            <textarea id="comment-content" class="form-control" placeholder="Write a comment..." rows="3"></textarea>
+          </div>
+          <div class="card-footer">
+            <img src="?" class="comment-author-img user-image"  alt=""/>
+            <button class="btn btn-sm btn-primary" type="submit">Post Comment</button>
+          </div>
+        </form>
+
+        <div id="comment-list"></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--#include virtual="/include/footer.html" -->
+
+<script src="/js/article.js" type="module"></script>
+</body>
+</html>

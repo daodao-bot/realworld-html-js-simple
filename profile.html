@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <!--#include virtual="/include/head.html" -->
+  <title>Home - Conduit</title>
+</head>
+<body>
+
+<!--#include virtual="/include/navbar.html" -->
+
+<div class="profile-page">
+  <div class="user-info">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-10 offset-md-1">
+          <img src="?" class="user-img profile-image"  alt=""/>
+          <h4 class="profile-username"> ? </h4>
+          <p class="profile-bio">
+            ?
+          </p>
+          <button id="follow-button" class="btn btn-sm btn-outline-secondary action-btn">
+            <i class="ion-plus-round"></i>
+            &nbsp; Follow <span class="profile-username"> ? </span>
+          </button>
+          <button id="edit-button" class="btn btn-sm btn-outline-secondary action-btn">
+            <i class="ion-gear-a"></i>
+            &nbsp; Edit Profile Settings
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-10 offset-md-1">
+        <div class="articles-toggle">
+          <ul class="nav nav-pills outline-active">
+            <li class="nav-item">
+              <a id="nav-link-my" class="nav-link active" href="">My Articles</a>
+            </li>
+            <li class="nav-item">
+              <a id="nav-link-favorited" class="nav-link" href="">Favorited Articles</a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="articles-list"></div>
+
+        <ul class="pagination"></ul>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--#include virtual="/include/footer.html" -->
+
+<script src="/js/profile.js" type="module"></script>
+</body>
+</html>

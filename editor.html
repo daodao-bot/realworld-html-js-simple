@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <!--#include virtual="/include/head.html" -->
+  <title>Home - Conduit</title>
+</head>
+<body>
+
+<!--#include virtual="/include/navbar.html" -->
+
+<div class="editor-page">
+  <div class="container page">
+    <div class="row">
+      <div class="col-md-10 offset-md-1 col-xs-12">
+        <ul class="error-messages"></ul>
+
+        <form>
+          <fieldset>
+            <fieldset class="form-group">
+              <input id="input-title" type="text" class="form-control form-control-lg" placeholder="Article Title" />
+            </fieldset>
+            <fieldset class="form-group">
+              <input id="input-description" type="text" class="form-control" placeholder="What's this article about?" />
+            </fieldset>
+            <fieldset class="form-group">
+              <textarea
+                  class="form-control"
+                  rows="8"
+                  placeholder="Write your article (in markdown)"
+              ></textarea>
+            </fieldset>
+            <fieldset class="form-group">
+              <input id="input-tags" type="text" class="form-control" placeholder="Enter tags" />
+              <div class="tag-list"></div>
+            </fieldset>
+            <button class="btn btn-lg pull-xs-right btn-primary" type="submit">
+              Publish Article
+            </button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--#include virtual="/include/footer.html" -->
+
+<script src="/js/editor.js" type="module"></script>
+</body>
+</html>
